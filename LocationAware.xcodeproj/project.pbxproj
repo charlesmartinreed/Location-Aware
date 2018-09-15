@@ -14,6 +14,7 @@
 		8CA54D9F214CCCA000A61D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CA54D9D214CCCA000A61D4A /* LaunchScreen.storyboard */; };
 		8CA54DAA214CCCA000A61D4A /* LocationAwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA54DA9214CCCA000A61D4A /* LocationAwareTests.swift */; };
 		8CA54DB5214CCCA000A61D4A /* LocationAwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA54DB4214CCCA000A61D4A /* LocationAwareUITests.swift */; };
+		8CA54DC4214CD0BA00A61D4A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CA54DC3214CD0BA00A61D4A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		8CA54DB0214CCCA000A61D4A /* LocationAwareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationAwareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA54DB4214CCCA000A61D4A /* LocationAwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAwareUITests.swift; sourceTree = "<group>"; };
 		8CA54DB6214CCCA000A61D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CA54DC3214CD0BA00A61D4A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CA54DC4214CD0BA00A61D4A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				8CA54DA8214CCCA000A61D4A /* LocationAwareTests */,
 				8CA54DB3214CCCA000A61D4A /* LocationAwareUITests */,
 				8CA54D92214CCC9F00A61D4A /* Products */,
+				8CA54DC2214CD0BA00A61D4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				8CA54DB6214CCCA000A61D4A /* Info.plist */,
 			);
 			path = LocationAwareUITests;
+			sourceTree = "<group>";
+		};
+		8CA54DC2214CD0BA00A61D4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CA54DC3214CD0BA00A61D4A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q58872TYB;
 				INFOPLIST_FILE = LocationAware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7Q58872TYB;
 				INFOPLIST_FILE = LocationAware/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
