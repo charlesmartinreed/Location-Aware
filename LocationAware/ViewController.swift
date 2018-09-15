@@ -59,9 +59,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 guard let placemark = placemarks?[0] else { return }
                 
                 //place the placemark data in the labels
-                if let sublocality = placemark.subLocality {
-                    self.subLocality.text = sublocality
-                    print(sublocality)
+                if let thoroughfare = placemark.thoroughfare {
+                    self.subLocality.text = thoroughfare
+                    print(thoroughfare)
                 }
                 
                 if let subAdministrativeArea = placemark.subAdministrativeArea {
